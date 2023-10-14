@@ -27,7 +27,7 @@
                 </Ellipse.Height>
             </Ellipse>
             <Grid Name="GridForRectangles"  
-                  Width="{Binding ActualWidth, ElementName=Circle}" Height="{Binding ActualHeight, ElementName=canvas}" >
+                  Width="{Binding ActualWidth, ElementName=Circle}" Height="{Binding ActualHeight, ElementName=Circle}" >
                 <Grid.RowDefinitions>
                     <RowDefinition />
                     <RowDefinition />

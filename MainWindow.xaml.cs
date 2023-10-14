@@ -25,15 +25,15 @@ namespace HW_16._09._23
         {
             InitializeComponent();
 
-            this.SizeChanged += (s, e) =>
-            {
-                if (this.ActualWidth != this.ActualHeight)
-                {
-                    double minSize = Math.Min(this.ActualWidth, this.ActualHeight);
-                    this.Width = minSize;
-                    this.Height = minSize;
-                }
-            };
+            //this.SizeChanged += (s, e) =>
+            //{
+            //    if (this.ActualWidth != this.ActualHeight)
+            //    {
+            //        double minSize = Math.Min(this.ActualWidth, this.ActualHeight);
+            //        this.Width = minSize;
+            //        this.Height = minSize;
+            //    }
+            //};
         }
 
         //private void Grid_SizeChanged(object sender, SizeChangedEventArgs e)
