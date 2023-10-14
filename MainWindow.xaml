@@ -12,7 +12,7 @@
     </Window.Resources>
     <Grid>
         <Canvas Margin="20" Name="canvas" SizeChanged="Canvas_SizeChanged">
-            <Ellipse Fill="#6E64C3" Stroke="Black" >
+            <Ellipse Name="Circle" Fill="#6E64C3" Stroke="Black" >
                 <Ellipse.Width>
                     <MultiBinding Converter="{StaticResource MinConverter}">
                         <Binding Path="ActualWidth" ElementName="canvas"/>
@@ -27,7 +27,7 @@
                 </Ellipse.Height>
             </Ellipse>
             <Grid Name="GridForRectangles"  
-                  Width="{Binding ActualWidth, ElementName=canvas}" Height="{Binding ActualHeight, ElementName=canvas}" >
+                  Width="{Binding ActualWidth, ElementName=Circle}" Height="{Binding ActualHeight, ElementName=canvas}" >
                 <Grid.RowDefinitions>
                     <RowDefinition />
                     <RowDefinition />
